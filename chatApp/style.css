@@ -1,0 +1,111 @@
+body{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); 
+    height: 100vh;
+    color: aliceblue;
+  
+}
+.btn{
+    border: none;
+    cursor: pointer;
+    padding: 0.625em;
+    border-radius: 0.5em;
+    background: rgb(2,0,36);
+    color: inherit;
+}
+.btn:hover{
+    filter: brightness(0.5);
+}
+.btn:active{
+    transition: all 1s ease;
+    transform: translateY(3px);
+}
+.person-selector{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    width: 100%
+}
+
+.person-btn{
+    width: 26.5%;
+    margin-bottom: 1em;
+    font-size: 1.1em;
+}
+.active-btn{
+    background-color: rgb(68, 101, 248);
+    box-shadow: 2px 2px 4px rgb(3, 3, 26);
+}
+.chat-container{
+    border-radius: 0.5em;
+    background-color: rgb(4, 4, 29);
+    min-height: 80vh;
+    padding: 0.5em 1.25em;
+    max-width: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    box-shadow:-2px -2px 4px rgb(192, 191, 206), 2px 2px 4px rgb(231, 212, 212);
+}
+.chat-screen{
+    height:20em ;
+     overflow-y: scroll;
+    scrollbar-width: 10px ;
+    
+}
+.chat-screen::-webkit-scrollbar{
+    display: none;
+}
+.message{
+    display: flex;
+    flex-direction: column ;
+    padding: 0.5em;
+    border-radius: 10px;
+    margin-bottom: 0.6em;
+  
+}
+.message-sender{
+    font-weight: bold;
+    font-size:medium;
+}
+
+.message-text{
+    font-size:1em;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+.message-timestamp{
+    font-size:small;
+    align-self: flex-end;
+}
+.blue-bg{
+    background-color: blue;
+}
+.gray-bg{
+    background-color: gray;
+} 
+
+.chat-form{
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+    position: static;
+    
+}
+.send-btn{
+    background-color: rgb(50, 50, 173);
+    color: #ffff;
+}
+.chat-input{
+    background-color: antiquewhite;
+    border: none;
+    min-height: 20%;
+    flex-grow: 1;
+    border-radius: 5px;
+    padding: 5px;
+}
+.clear-chat-btn{
+    display:block;
+   margin-left: 45%;
+   margin-top:2em ;
+   background-color: rgb(52, 52, 243);
+}

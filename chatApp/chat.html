@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chat app</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./style.css" rel="stylesheet">
+    </head>
+<body>
+ <div class="person-selector">
+        <button  class="btn active-btn person-btn" id="John">John</button>
+        <button class="btn person-btn" id="Jane">Jane</button>
+    </div>
+ <div class="chat-container">
+        <h2 class="chat-header">John is Online..... </h2>
+        <div class="chat-screen">
+        <!-- <div class="message blue-bg">
+            <div class="message-sender">John</div>
+            <div class="message-text">hey dear whats up</div>
+            <div class="message-timestamp">10:30 AM</div>
+        </div>
+        <div class="message gray-bg">
+            <div class="message-sender">Jane</div>
+            <div class="message-text">im good hun and you</div>
+            <div class="message-timestamp">10:35 AM</div>
+        </div> -->
+        </div>
+     <form class="chat-form">
+     <input type="text" class="chat-input" required placeholder="type here, John..." id="">
+     <button type="submit" class="btn send-btn">send</button>
+     </form>
+     <button class="btn clear-chat-btn">Clear chat</button>
+ </div>
+ <script src="./chat.js"></script>
+</body>
+</html>
